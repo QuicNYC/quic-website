@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>quic</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
     <link href="/styles/site.css" rel="stylesheet">
 
 	{{!-- This file provides the default styling for the KeystoneJS Content Editor
@@ -72,10 +73,45 @@
     <!-- The content block should contain the body of your template's content-->
 	{{{body}}}
 </div>
-<div class="container">
+
+<div><!--class="container" -->
     <div id="footer">
-        <p>Powered by Queens College</p>
+        <!--///////////////////////////////////////////////////////  -->
+        <div id="footer-email-parent" class="container">
+            <h2>Sign Up For Tech Incubator Updates</h2>
+            <div id="footer-email">
+                <form action="">
+                    <input type="text" placeholder="Email" size="50"/>
+                    <button id="footer-email-btn">Suscribe</button>
+                </form>
+            </div>
+        </div>
+        <!-- ////////////////////////////////////////////////////////////// -->
+        <div class="container">
+            <div id="left-foot-col" class="col-xs-4">
+                <ul id="footer-inc-info">
+                    <li >Tech Incubator @ Queens College </li>
+                    <li style="color: #4C4C4C">65-30 Kissena Blvd. CEP Hall 2 </li>
+                    <li style="color: #4C4C4C">Queens, NY 11367-1597</li>
+                    <li >718-570-0574</li>
+                    <li>quic@quinc.nyc</li>
+                </ul>
+            </div>
+            <div id="center-foot-col" class="col-xs-4">
+				
+            </div>
+            <div id="right-foot-col" class="col-xs-4">
+                <ul id="social-bar">
+                    <li><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-github fa-2x" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+        </div>
+        <!-- ///////////////////////////////////////////////////////////////// -->
     </div>
+    <p>Powered by Queens College</p>
 </div>
 {{!--
     //- jQuery 1.11.3 is included by default, and required by both Bootstrap
@@ -87,6 +123,7 @@
     //- Customise which Bootstrap javascript files are served by including
     //- them specifically here, instead of bootstrap-3.3.5.min.js
 --}}
+<script src="https://use.fontawesome.com/89164c747d.js"></script>
 <script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script>
 {{{isAdminEditorJS user}}}
 </body>
