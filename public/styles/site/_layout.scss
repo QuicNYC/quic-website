@@ -9,15 +9,15 @@
   
 }
 
-.navbar-inverse {
+.navbar-default {
   padding-top: 1rem;
   background: transparent;
   border: 0;
 }
 
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:hover,
-.navbar-inverse .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
   background: transparent;
 }
 
@@ -66,5 +66,5 @@
 
 
 body {
-  background-color: #201F1D;
+  background-color: #F8F8FF;
 }
