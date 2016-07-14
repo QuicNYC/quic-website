@@ -1,18 +1,11 @@
-#index-body{
-  background-color: $primary-background-color;
-  height: 100rem;
-}
-
-
-.jumbotron {
+.cover {
   background-image: linear-gradient(
 				  rgba(0, 0, 0, 0.5),
 				  rgba(0, 0, 0, 0.5)
   ),
   url(/images/people-coffee-tea-meeting.jpg);
-  //background: url('/images/people-coffee-tea-meeting.jpg');
   background-size: cover;
-  height: 40rem;
+  height: 55rem;
   color: white;
   text-align: center;
 }
@@ -20,7 +13,7 @@
 #email-parent{
   text-align: center;
   color: #000000;
-  font-family: Raleway;
+  font-family: Raleway, serif;
   border-top: 1px solid #eeeeee;
   margin-bottom: 4%;
   padding-bottom:4%;
