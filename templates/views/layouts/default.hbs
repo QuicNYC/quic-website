@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>quic</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway"/>
     <link href="/styles/site.css" rel="stylesheet">
 
 	{{!-- This file provides the default styling for the KeystoneJS Content Editor
@@ -15,32 +15,60 @@
 
 </head>
 <body>
-<nav role="navigation" class="navbar navbar-full navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-            </button>
-            <a href="/" class="navbar-brand">Quic</a>
-        </div>
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-				{{# each navLinks}}
-                    <li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
-                        <a href="{{ href }}">{{ label }}</a>
-                    </li>
-				{{/each}}
+<div {{#if home}} class="cover" {{/if}}>
+    <nav role="navigation" class="navbar navbar-full navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand">Quic</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+					{{# each navLinks}}
+                        <li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
+                            <a href="{{ href }}">{{ label }}</a>
+                        </li>
+					{{/each}}
 
-				{{#if user}}
-                    <li><a href="/keystone/signout">Sign Out</a></li>
-				{{else}}
-                    <li><a href="/keystone/signin">Sign In</a></li>
-				{{/if}}
-            </ul>
+					{{#if user}}
+                        <li><a href="/keystone/signout">Sign Out</a></li>
+					{{else}}
+                        <li><a href="/keystone/signin">Sign In</a></li>
+					{{/if}}
+                </ul>
+            </div>
         </div>
+    </nav>
+
+    <div {{#if home}} {{else}} style="display: none;" {{/if}}>
+        <div class="container text-sm-center">
+            <h1>Welcome To quic</h1>
+            <p class="lead">Spaces, rooms and more!</p>
+
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register"
+                        style="background-color: #7F0000; border: none">Register
+                    Now
+                </button>
+            </div>
+        </div>
+
+        <div id="email-parent" class="container">
+            <h2>Sign Up For Tech Incubator Updates</h2>
+            <div id="email">
+                <form action="">
+                    <input type="text" placeholder="Email" size="50"/>
+                    <button id="email-btn" class="btn btn-primary">Suscribe</button>
+                </form>
+            </div>
+        </div>
+
     </div>
-</nav>
+</div>
+
 <div id="body">
     <!--
         Flash messages allow you to display once-off status messages to users, e.g. form
@@ -74,18 +102,19 @@
 	{{{body}}}
 </div>
 
+
 <div><!--class="container" -->
     <div id="footer">
         <!--///////////////////////////////////////////////////////  -->
-        
+
         <!-- ////////////////////////////////////////////////////////////// -->
         <div class="container ">
             <div id="left-foot-col" class="col-sm-5 col-xs-12">
                 <ul id="footer-inc-info">
-                    <li >Tech Incubator @ Queens College </li>
-                    <li style="color: #656565">65-30 Kissena Blvd. CEP Hall 2 </li>
+                    <li>Tech Incubator @ Queens College</li>
+                    <li style="color: #656565">65-30 Kissena Blvd. CEP Hall 2</li>
                     <li style="color: #656565">Queens, NY 11367-1597</li>
-                    <li >718-570-0574</li>
+                    <li>718-570-0574</li>
                     <li>quic@quinc.nyc</li>
                 </ul>
             </div>
@@ -102,16 +131,8 @@
     </div>
     <p>Powered by Queens College</p>
 </div>
-{{!--
-    //- jQuery 1.11.3 is included by default, and required by both Bootstrap
-    //- and the KeystoneJS Content Editor. If you are not targeting IE8,
-    //- you can upgrade to 2.1.4 (also bundled) for better performance.
---}}
+
 <script src="/js/jquery/jquery-2.1.4.min.js"></script>
-{{!--
-    //- Customise which Bootstrap javascript files are served by including
-    //- them specifically here, instead of bootstrap-3.3.5.min.js
---}}
 <script src="https://use.fontawesome.com/89164c747d.js"></script>
 <script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script>
 {{{isAdminEditorJS user}}}

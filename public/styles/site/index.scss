@@ -1,70 +1,71 @@
-#index-body{
+#index-body {
   background-color: $primary-background-color;
-  
+
 }
 
-.primary-font-style{
+.primary-font-style {
   font-family: $primary-font_family;
   font-weight: bolder;
 }
 
-
-.jumbotron {
+.cover {
   background-image: linear-gradient(
 				  rgba(0, 0, 0, 0.5),
 				  rgba(0, 0, 0, 0.5)
   ),
   url(/images/people-coffee-tea-meeting.jpg);
-  //background: url('/images/people-coffee-tea-meeting.jpg');
   background-size: cover;
-  height: 40rem;
+  height: 55rem;
   color: white;
   text-align: center;
 }
 
-#pricing-plans-info{
-	img{
-	  height:100%;
-	  width: 100%;
-	}
-  	h1{
-	  padding-top: 7%;
-	  padding-bottom: 7%;
-  	}
-  	h3{
-	  padding-top: 10%;
-	  padding-bottom: 10%;
-	  font-weight: bold;
-	}
-  	button{
-	  	color: #FFFFFF;
-		background-color: $prim-color;
-	  	border: 0px;
-	}
+#pricing-plans-info {
+  color: black;
+  img {
+	height: 100%;
+	width: 100%;
+  }
+  h1 {
+	padding-top: 7%;
+	padding-bottom: 7%;
+  }
+  h3 {
+	padding-top: 10%;
+	padding-bottom: 10%;
+	font-weight: bold;
+  }
+  button {
+	color: #FFFFFF;
+	background-color: $prim-color;
+	border: 0px;
+  }
 }
-.ext-btn-pd{
+
+.ext-btn-pd {
   padding-top: 7%;
   padding-bottom: 7%;
 }
 
-#ammen-info{
+#ammen-info {
   border-top: 1px solid #eeeeee;
   background-color: #DFDFE5;
 }
 
-#email-parent{
+#email-parent {
   text-align: center;
-  color: $secondary-color;
-  font-family: Raleway;
-  border-top: 1px solid #eeeeee;
-  padding-bottom:4%;
+  font-family: Raleway, serif;
+  //color: $secondary-color;
+  padding-bottom: 4%;
+  color: white;
+  margin-top: 8%;
 }
 
-#email{
+#email {
   padding-top: 2%;
 }
 
-#email-btn{
+#email-btn {
   color: #FFFFFF;
   background-color: $prim-color;
   border: 0px;
