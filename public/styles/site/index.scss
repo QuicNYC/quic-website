@@ -1,3 +1,9 @@
+#index-body{
+  background-color: $primary-background-color;
+  height: 100rem;
+}
+
+
 .jumbotron {
   background-image: linear-gradient(
 				  rgba(0, 0, 0, 0.5),
@@ -9,4 +15,27 @@
   height: 40rem;
   color: white;
   text-align: center;
+}
+
+#email-parent{
+  text-align: center;
+  color: #000000;
+  font-family: Raleway;
+  border-top: 1px solid #eeeeee;
+  margin-bottom: 4%;
+  padding-bottom:4%;
+}
+
+#email{
+  padding-top: 2%;
+}
+
+#email-btn{
+  color: #FFFFFF;
+  background-color: #7F0000;
+  border: 0px;
+  height: 25px;
+  border-radius: 0px;
+  margin-left: -5px;
+  margin-top: -2px;
 }
