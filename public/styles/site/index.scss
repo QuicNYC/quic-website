@@ -50,7 +50,37 @@
 #ammen-info {
   border-top: 1px solid #eeeeee;
   background-color: #DFDFE5;
+  img{
+	height:25%;
+	width:25%;
+  }
+  img:hover{
+	//height:26%;
+	//width:26%;
+	background-color: #cd0000;
+	-webkit-transition: background-color 500ms linear;
+	-moz-transition: background-color 500ms linear;
+	-o-transition: background-color 500ms linear;
+	-ms-transition: background-color 500ms linear;
+	transition: background-color 500ms linear;
+  }
+  h1 {
+	padding-top: 5%;
+	padding-bottom: 5%;
+  }
+  h3 {
+	padding-top: 7%;
+	padding-bottom: 7%;
+	font-weight: bold;
+  }
 }
+
+#parent-car-div{
+  padding-top: 10%;
+  padding-bottom: 10%;
+  
+}
+
 
 #email-parent {
   text-align: center;
@@ -69,8 +99,8 @@
   color: #FFFFFF;
   background-color: $prim-color;
   border: 0px;
-  height: 25px;
+  height: 34px;
   border-radius: 0px;
-  margin-left: -5px;
-  margin-top: -2px;
+  margin-left: -3px;
+  margin-top: 0px;
 }
