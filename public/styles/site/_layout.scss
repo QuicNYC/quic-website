@@ -73,6 +73,11 @@
   }
 }
 
+@media (max-width: 34em) {
+  .navbar-collapse {
+	background-color: $nav-bar-background-mobile;
+  }
+}
 
 body {
   background-color: #F8F8FF;
