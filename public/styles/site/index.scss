@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 #index-body {
   background-color: $primary-background-color;
 
@@ -16,8 +20,8 @@
   ),
   url(/images/people-coffee-tea-meeting.jpg);
   background-size: cover;
+  height: 80%;
   color: white;
-  height: 100%;
   text-align: center;
   z-index: 1;
 }
