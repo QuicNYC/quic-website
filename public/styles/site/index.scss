@@ -4,7 +4,6 @@ html, body {
 
 #index-body {
   background-color: $primary-background-color;
-
 }
 
 .primary-font-style {
@@ -141,6 +140,10 @@ html, body {
 	height: 300px;
 	margin: 0 auto; /* Align slide image horizontally center */
   }
+  .carousel-indicators{
+	top: 95%;
+	margin-top: 2%;
+  }
 }
 
 .carousel-control.left{
@@ -173,11 +176,21 @@ html, body {
   z-index:1;
 }
 
+@media (max-width: 812px) {
+  #room-info-pane{
+	height: 725px;
+	
+  }
+  .room{
+	height: 625px;
+  }
+}
 
 #room-info-pane{
   color: #FFFFFF;
-  padding-bottom: 5%;
-  padding-top: 5%;
+  
+  padding-bottom: 3%;
+  padding-top: 3%;
   z-index: 2;
   ul{
 	list-style: none;
@@ -187,7 +200,6 @@ html, body {
   p{
 	font-size: 14px;
 	text-align: left;
-
   }
   img{
 	height: 300px;
