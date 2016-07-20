@@ -16,7 +16,7 @@
 
 </head>
 <body>
-<div {{#if home}} class="cover" {{/if}}>
+<div {{#if home}} class="cover text-center" data-stellar-background-ratio="0.2" {{/if}}>
     <nav role="navigation" class="navbar navbar-full navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -118,6 +118,13 @@
 <script src="/js/jquery/jquery-2.1.4.min.js"></script>
 <script src="https://use.fontawesome.com/89164c747d.js"></script>
 <script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script>
+<script src="/js/stellar.js/jquery.stellar.js"></script>
+<script>
+    $(document).ready(function(){
+        $(window).stellar();
+    });
+</script>
+<script src="/js/about.js"></script>
 <script src="/js/about.js"></script>
 {{{isAdminEditorJS user}}}
 </body>
