@@ -1,4 +1,3 @@
-
 .gallery-image img {
   display: block;
   max-width: 100%;
@@ -6,6 +5,8 @@
 }
 
 #top-title {
+  padding-top: 4%;
+  margin-bottom: 10%;
   h1 {
 	padding-top: 20px;
 	font-size: 58px;
@@ -16,7 +17,7 @@
 
 .navbar {
   margin-bottom: 10px;
-  
+
 }
 
 .navbar-brand {
@@ -25,9 +26,9 @@
   font-size: 18px;
   line-height: 20px;
   height: 50px;
-  img{
-	height:50px;
-	width:auto;
+  img {
+	height: 50px;
+	width: auto;
   }
 }
 
@@ -43,15 +44,6 @@
   background: transparent;
 }
 
-
-#email-parent {
-  color: white;
-  font-family: Raleway, serif;
-  margin-top: 8%;
-  padding-bottom: 4%;
-  text-align: center;
-}
-
 @media (min-width: 768px) {
   .form-inline .form-control {
 	display: inline-block;
@@ -61,67 +53,26 @@
   }
 }
 
-#email {
-  padding-top: 2%;
-}
+#email-parent {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); /*Standard*/
+  color: white;
+  font-family: Raleway, serif;
+  height:auto;
+  padding-bottom: 2%;
 
-#email-btn {
-  background-color: $prim-color;
-  border: 0px;
-  border-radius: 0px;
-  color: #FFFFFF;
-  height: 34px;
-  width:100px;
-  margin-left: -3px;
-  margin-top: 0px;
-}
-
-#footer {
-  height: 500px;
-  padding-top:64px;
-  padding-bottom: 30px;
-  color: #FFFFFF;
-  background-color: $secondary-color;
-}
-
-#footer-inc-info{
-  font-family:  Raleway;
-  color: #FFFFFF;
-  list-style: none;
-  text-align: left;
-  padding-left: 0px;
-}
-
-#left-foot-col{
-  li{
-	padding:1% 1%;
+  #email {
+	padding-top: 2%;
   }
-  
-}
 
-#social-bar{
-  color: #EEEEEE;
-  list-style: none;
-  display: block;
-  text-align: right;
-  padding-left: 0px;
-  
-  li{
-	display: inline-block;
-	padding-left: 5%;
-	padding-right: 5%;
-	opacity: 0.7;
-  }
-  a{
-	opacity: 0.7;
-  }
-  
-  li:hover{
-	opacity: 1.0;
-  }
-  
-  a:hover{
-	opacity: 1.0;
+  #email-btn {
+	background-color: $prim-color;
+	border: 0px;
+	border-radius: 0px;
+	color: #FFFFFF;
+	height: 34px;
+	width: 100px;
+	margin-left: -3px;
+	margin-top: 0px;
   }
 }
 
@@ -134,3 +85,53 @@
 body {
   background-color: #F8F8FF;
 }
+
+#footer {
+  height: 500px;
+  padding-top: 64px;
+  padding-bottom: 30px;
+  color: #FFFFFF;
+  background-color: $secondary-color;
+}
+
+#footer-inc-info {
+  font-family: Raleway;
+  color: #FFFFFF;
+  list-style: none;
+  text-align: left;
+  padding-left: 0px;
+}
+
+#left-foot-col {
+  li {
+	padding: 1% 1%;
+  }
+}
+
+#social-bar {
+  color: #EEEEEE;
+  list-style: none;
+  display: block;
+  text-align: right;
+  padding-left: 0px;
+
+  li {
+	display: inline-block;
+	padding-left: 5%;
+	padding-right: 5%;
+	opacity: 0.7;
+  }
+  a {
+	opacity: 0.7;
+  }
+
+  li:hover {
+	opacity: 1.0;
+  }
+
+  a:hover {
+	opacity: 1.0;
+  }
+}
+
+
