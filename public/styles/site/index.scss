@@ -230,6 +230,10 @@ html, body {
   p{
 	padding-top: 1%;
   }
+  .btn-primary{
+	background-color: $prim-color;
+	border: none;
+  }
 }
 
 #staff-pane{
@@ -245,16 +249,22 @@ html, body {
 	border: 1px;
 	border-color:#FFFFFF;
   }
-}
-.staffers{
-  padding-top: 2%;
-  padding-bottom: 2%;
+  .btn-primary{
+	background-color: $prim-color;
+	border: none;
+  }
+  .staffers{
+	padding-top: 2%;
+	padding-bottom: 2%;
+  }
+
+  .interns{
+	padding-top: 2%;
+	padding-bottom: 2%;
+
+  }
 }
 
-.interns{
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
 
 .circular {
   width: 150px;
