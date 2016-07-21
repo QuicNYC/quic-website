@@ -8,7 +8,23 @@ html, body {
 
 .primary-font-style {
   font-family: $primary-font_family;
-  font-weight: bolder;
+  h1{
+	font-weight: bolder;
+  }
+  h2{
+	font-weight: bolder;
+  }
+  h3{
+	font-weight: bolder;
+	font-size: 24px;
+  }
+  p{
+	font-size: 16px;
+  }
+  li{
+	font-size: 16px;
+  }
+  
 }
 
 .cover {
@@ -17,7 +33,7 @@ html, body {
 				  rgba(0, 0, 0, 0.5),
 				  rgba(0, 0, 0, 0.5)
   ),
-  url(/images/people-talking.jpg);
+  url(/images/stock/people-talking.jpg);
   background-size: cover;
   height: 80%;
   color: white;
@@ -35,12 +51,8 @@ html, body {
 	padding-top: 7%;
   }
   h3 {
-	font-weight: bold;
 	padding-bottom: 10%;
 	padding-top: 10%;
-  }
-  p{
-	font-size: 16px;
   }
   button {
 	background-color: $prim-color;
@@ -59,7 +71,7 @@ html, body {
   background-image: linear-gradient(
 				  rgba(0, 0, 0, 0.5),
 				  rgba(0, 0, 0, 0.5)),
-  url(/images/mac-work-1.jpg);
+  url(/images/stock/mac-work-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   bottom: 0;
@@ -90,13 +102,13 @@ html, body {
 	padding-top: 5%;
   }
   h3 {
-	font-size: 24px;
+	//font-size: 24px;
 	font-weight: bold;
 	padding-bottom: 7%;
 	padding-top: 7%;
   }
   p{
-	font-size: 18px;
+	//font-size: 18px;
   }
   .ammen-item{
 	padding-top: 2%;
@@ -113,17 +125,11 @@ html, body {
   ul{
 	text-align: left;
   }
-  li{
-	font-size: 16px;
-  }
 }
 
 #parent-car-div{
   padding-bottom: 5%;
   padding-top: 5%;
-  p{
-	font-size: 18px;
-  }
 }
 
 #generic-carousel{
@@ -155,19 +161,13 @@ html, body {
   background-image: none;
 
 }
-#info-block-1{
-  p{
-	font-size: 14px;
-	text-align: left;
-  }
-}
 
 .wall-2{
   background-attachment: fixed;
   background-image: linear-gradient(
 				  rgba(0, 0, 0, 0.5),
 				  rgba(0, 0, 0, 0.5)),
-  url(/images/mac-setup-1.jpg);
+  url(/images/stock/mac-setup-1.jpg);
   background-size: cover;
   bottom: 0;
   right: 0;
@@ -197,7 +197,6 @@ html, body {
   }
   
   p{
-	font-size: 14px;
 	text-align: left;
   }
   img{
@@ -208,6 +207,66 @@ html, body {
 	padding-top: 2%;
 	padding-bottom: 2%;
   }
+}
+
+.wall-3{
+  background-attachment: fixed;
+  background-image: linear-gradient(
+				  rgba(0, 0, 0, 0.5),
+				  rgba(0, 0, 0, 0.5)),
+  url(/images/stock/people-woman-meeting.jpg);
+  background-size: cover;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  z-index:1;
+}
+
+#about-pane{
+  padding-bottom: 2%;
+  h2{
+	padding-top:2%;
+  }
+  p{
+	padding-top: 1%;
+  }
+}
+
+#staff-pane{
+  color: #FFFFFF;
+  h2{
+	padding-top:2%;
+  }
+  p{
+	padding-top: 1%;
+  }
+  img:hover{
+	opacity:0.95;
+	border: 1px;
+	border-color:#FFFFFF;
+  }
+}
+.staffers{
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.interns{
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.circular {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  -webkit-border-radius: 75px;
+  -moz-border-radius: 75px;
+}
+
+.circular img {
+  opacity: 0;
+  filter: alpha(opacity=0);
 }
 
 #map{
