@@ -16,7 +16,7 @@
 
 </head>
 <body>
-<div {{#if home}} class="cover text-center" data-stellar-background-ratio="0.2" {{/if}}>
+<div {{#if home}} class="cover text-center"{{/if}}>
     <nav role="navigation" class="navbar navbar-full navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -85,23 +85,45 @@
 	{{{body}}}
 </div>
 
-
-<div><!--class="container" -->
+<div>
     <div id="footer">
-        <!--///////////////////////////////////////////////////////  -->
-
-        <!-- ////////////////////////////////////////////////////////////// -->
         <div class="container ">
-            <div id="left-foot-col" class="col-sm-5 col-xs-12">
-                <ul id="footer-inc-info">
-                    <li>Tech Incubator @ Queens College</li>
-                    <li style="color: #656565">65-30 Kissena Blvd. CEP Hall 2</li>
-                    <li style="color: #656565">Queens, NY 11367-1597</li>
-                    <li>718-570-0574</li>
-                    <li>quic@quinc.nyc</li>
+			<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+            <div id="left-foot-col" class="col-sm-3 col-xs-12">
+                <div class="container">
+					<p>Tech Incubator @ Queens College</p>
+					<p style="color: #656565">65-30 Kissena Blvd. CEP Hall 2</p>
+					<p style="color: #656565">Queens, NY 11367-1597</p>
+					<p>718-570-0574</p>
+					<p>quic@quinc.nyc</p>
+                </div>
+            </div>
+            <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+            <div class="col-sm-3 col-xs-12 center-foot-col">
+				<ul>
+                    <li><a href='/'>Home</a></li>
+                    <li><a href='/about'>About</a></li>
+                    <li><a href='/gallery'>Gallery</a></li>
+                    <li><a href='/blog/:category?'>Blog</a></li>
+                    <li><a href='/contact'>Contact</a></li>
+                    <li>
+						<a href="https://www.google.com/maps/dir//40.7342789,-73.8168639/@40.73426,-73.816884,16z?hl=en-US">
+							Directions
+						</a>
+					</li>
+				</ul>
+			</div>
+            <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+            <div class="col-sm-3 col-xs-12 center-foot-col">
+                <ul>
+                    <li><a href='http://www.qc.cuny.edu/Pages/home.aspx'>Queens College</a></li>
+                    <li><a href='http://www.cuny.edu/'>CUNY</a></li>
+                    <li><a href='http://www.nytech.org/'>NYTech</a></li>
+                    <li><a href="#">Join Us</a></li>
                 </ul>
             </div>
-            <div id="right-foot-col" class="col-sm-7 col-xs-12">
+            <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+            <div id="right-foot-col" class="col-sm-3 col-xs-12">
                 <ul id="social-bar">
                     <li><a href="https://www.facebook.com/QueensCollegeTechIncubatorCenter/"><img src="/images/icons/Facebook-bw.png"/></a></li>
                     <li><a href="https://twitter.com/qctechincubator"><img src="/images/icons/Twitter-bw.png"></a></li>
@@ -124,7 +146,6 @@
     });
 </script>
 <script src="/js/about.js"></script>
-<script src="/js/modal.js"></script>
 {{{isAdminEditorJS user}}}
 </body>
 </html>

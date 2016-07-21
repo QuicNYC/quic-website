@@ -6,25 +6,38 @@ html, body {
   background-color: $primary-background-color;
 }
 
-.primary-font-style {
-  font-family: $primary-font_family;
-  h1{
-	font-weight: bolder;
+#email-parent {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); /*Standard*/
+  color: white;
+  font-family: Raleway, serif;
+  height:auto;
+  padding-bottom: 2%;
+  .form-group{
+	width: 100%;
   }
-  h2{
-	font-weight: bolder;
+  input{
+	width:20%;
+	margin-right: -2px;
+	margin-left: -3px;
   }
-  h3{
-	font-weight: bolder;
-	font-size: 24px;
+  #email {
+	padding-top: 2%;
   }
-  p{
-	font-size: 16px;
+
+  #email-btn {
+	background-color: $prim-color;
+	border: 1px;
+	border-color: $prim-color;
+	border-radius: 0px;
+	color: #FFFFFF;
+	height: 34px;
+	width: 100px;
+	margin-left: -3px;
+	margin-top: 0px;
   }
-  li{
-	font-size: 16px;
+  #email-btn:hover{
+	background-color: #670000;
   }
-  
 }
 
 .cover {
@@ -214,7 +227,7 @@ html, body {
   background-image: linear-gradient(
 				  rgba(0, 0, 0, 0.5),
 				  rgba(0, 0, 0, 0.5)),
-  url(/images/stock/people-woman-meeting.jpg);
+  url(/images/rooms/queens-college.jpg);
   background-size: cover;
   bottom: 0;
   right: 0;
@@ -233,6 +246,9 @@ html, body {
   .btn-primary{
 	background-color: $prim-color;
 	border: none;
+  }
+  a{
+	color: $prim-color;
   }
 }
 
@@ -265,6 +281,20 @@ html, body {
   }
 }
 
+#school-pane{
+  color: #FFFFFF;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  a{
+	color: $prim-color;
+  }
+  h2{
+	padding-top:2%;
+  }
+  p{
+	padding-top: 1%;
+  }
+}
 
 .circular {
   width: 150px;
