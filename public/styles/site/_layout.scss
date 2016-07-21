@@ -1,3 +1,24 @@
+.primary-font-style {
+  font-family: $primary-font_family;
+  h1{
+	font-weight: bolder;
+  }
+  h2{
+	font-weight: bolder;
+  }
+  h3{
+	font-weight: bolder;
+	font-size: 24px;
+  }
+  p{
+	font-size: 16px;
+  }
+  li{
+	font-size: 16px;
+  }
+
+}
+
 .gallery-image img {
   display: block;
   max-width: 100%;
@@ -53,29 +74,6 @@
   }
 }
 
-#email-parent {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); /*Standard*/
-  color: white;
-  font-family: Raleway, serif;
-  height:auto;
-  padding-bottom: 2%;
-
-  #email {
-	padding-top: 2%;
-  }
-
-  #email-btn {
-	background-color: $prim-color;
-	border: 0px;
-	border-radius: 0px;
-	color: #FFFFFF;
-	height: 34px;
-	width: 100px;
-	margin-left: -3px;
-	margin-top: 0px;
-  }
-}
-
 @media (max-width: 34em) {
   .navbar-collapse {
 	background-color: $nav-bar-background-mobile;
@@ -87,6 +85,7 @@ body {
 }
 
 #footer {
+  font-family: Raleway;
   height: 500px;
   padding-top: 64px;
   padding-bottom: 30px;
@@ -94,17 +93,29 @@ body {
   background-color: $secondary-color;
 }
 
-#footer-inc-info {
-  font-family: Raleway;
-  color: #FFFFFF;
-  list-style: none;
-  text-align: left;
-  padding-left: 0px;
-}
-
 #left-foot-col {
   li {
 	padding: 1% 1%;
+  }
+  border-right: solid 1px;
+  border-color: #FFFFFF;
+}
+
+.center-foot-col{
+  border-right: solid 1px;
+  border-color: #FFFFFF;
+  ul{
+	list-style: none;
+  }
+  li{
+	margin-bottom: 2%;
+  }
+  a {
+	color: #FFFFFF;
+  }
+  a:hover{
+	color: $prim-color;
+	text-decoration: none;
   }
 }
 

@@ -3,9 +3,11 @@
     <div id="email">
         <form class="form-inline">
             <div class="form-group">
-                <input type="text" class="form-control" id="exampleInputName2" placeholder="Email">
+                <input type="text" class="form-control" id="emailName" placeholder="Full Name">
+                <input type="text" class="form-control" id="emailAddress" placeholder="Email">
+                <input type="text" class="form-control" id="phoneNumber" placeholder="Phone">
+                <button id="email-btn" type="submit" class="btn btn-default">Submit</button>
             </div>
-            <button id="email-btn" type="submit" class="btn btn-default">Submit</button>
         </form>
     </div>
 </div>
@@ -369,11 +371,10 @@
             opportunities and driving new innovation and technology development in New York. With the advanced computational
             infrastructure and the CUNY community advantages, TIQC provides an outstanding environment for companies to turn
             innovative ideas into businesses and success.</p>
-        <p class="text-left">TIQC is a member of Business Incubator Association of New York State (BIA/NYS).</p>
+        <p class="text-left">TIQC is a member of <a href="http://bianys.com/node/1695">Business Incubator Association of New York State (BIA/NYS).</a></p>
 	</div>
     <div class="container">
         <h2>Staff</h2>
-        <p>klsdfjalkdsfh;ksajdfhksjdf</p>
         <div class="staffers container row">
             <div class="col-md-3 col-sm-6 col-xs-12">
                 <img id="staff0" src="/images/staff/Ted_portrait.jpg" alt="" class="circular" onclick="showModal0(0)"/>
@@ -416,13 +417,44 @@
 	</div>
 </div>
 <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
-<div id="staff-pane" class="wall-3 container-fluid text-center primary-font-style">
+<div id="school-pane" class="wall-3 container-fluid text-center primary-font-style">
+	<h1>Where We Are</h1>
+	<h2>Queens College</h2>
+	<div class="container text-left">
+		<p>At its founding in 1937, <a href="http://www.qc.cuny.edu/Pages/home.aspx">Queens College</a> 
+			was hailed by the people of the borough as “the college 
+			of the future.” Now part of the City University of New York (CUNY), Queens College offers a 
+			rigorous education in the liberal arts and sciences under the guidance of a faculty dedicated to 
+			both teaching and research. Students graduate with the ability to think critically, address 
+			complex problems, explore various cultures, and use modern technologies and information resources.</p>
 	
+		<p>Located in a residential area of Flushing in the borough of Queens—America’s most ethnically diverse
+			county—the college has students from more than 150 nations. A member of Phi Beta Kappa, Queens College
+			is consistently ranked among the leading institutions in the nation for the quality of its academic 
+			programs and student achievement. Recognized as one of the most affordable public colleges in the country,
+			Queens College offers a first-rate education to talented people of all backgrounds and financial means.</p>
+	
+		<p>The beautiful campus consists of 80 acres lined with trees surrounding grassy open spaces and a 
+			traditional quad. The college boasts state-of-the-art computer and science laboratories, a spectacular
+			music building, and the six-story Rosenthal Library. The major classroom building, Powdermaker Hall, 
+			has the latest technology throughout. An extensive commitment to sustainability has earned Queens College
+			inclusion in the Princeton Review’s first-ever Guide to 322 Green Colleges.</p>
+        <p>TIQC is located in a dedicated building, CEP Hall 2, on an 80-acre, tree-lined Queens College campus 
+			surrounding a traditional quad with a magnificent view of the Manhattan skyline. You may reach us by car, 
+			by bus or by Queens College Shuttle.</p>
+
+        <p>Queens College is located at 65-30 Kissena Boulevard at the corner of the Long Island Expressway (LIE)
+			and Kissena Boulevard (Exit 24) in Flushing, Queens. See
+			<a href="http://www.qc.cuny.edu/about/directions/2d/Pages/default.aspx">Campus map</a> or get directions
+			<a href="https://www.google.com/maps/dir//40.7342789,-73.8168639/@40.73426,-73.816884,16z?hl=en-US">here</a>
+		</p>
+    </div>
 </div>
 <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
 <div id="map" class="container-fluid">
     <h3>My Google Maps Demo</h3>
     <div id="map" class="container-fluid"></div>
+    <script src="/js/modal.js"></script>
     <script src="/js/maps.js"></script>
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP5Y55DuHISIlV9WUuAYNt1W8PtVk0E6g&callback=initialize">
