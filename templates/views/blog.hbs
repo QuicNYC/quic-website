@@ -1,14 +1,20 @@
+<link rel="stylesheet" type="text/css" href="/js/SlidePushMenus/css/default.css">
+<link rel="stylesheet" type="text/css" href="/js/SlidePushMenus/css/component.css">
+<script src="/js/SlidePushMenus/js/modernizr.custom.js"></script>
+<script src="/js/yui.js"></script>
+
 <div class="container">
-	<h1>Blog</h1>
+	<h1 class="text-color">Blog</h1>
 </div>
 <div class="container">
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	<p class="text-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	<div class="row">
+
+	<!-- <div class="row">
 		<div class="col-sm-8 col-md-9">
 			<h4 class="text-weight-normal">Showing {{ data.posts.results.length}} post.</h4>
 			<div class="blog">
@@ -35,5 +41,42 @@
 			</div>
 		</div>
 	</div>
-	{{>pagination}}
+	{{>pagination}} -->
 </div>
+
+
+
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+	<div id="demo" class="yui3-skin-sam yui3-g"> <!-- You need this skin class -->
+
+		<div id="leftcolumn" class="yui3-u">
+		     <!-- Container for the calendar -->
+		  	<div id="mycalendar"></div>
+		</div>
+		<div id="rightcolumn" class="yui3-u">
+			   <div id="links" style="padding-left:20px;">
+				    <!-- The buttons are created simply by assigning the correct CSS class -->
+				    <!-- <button id="togglePrevMonth" class="yui3-button">Toggle Previous Month's Dates</button><br>
+				    <button id="toggleNextMonth" class="yui3-button">Toggle Next Month's Dates</button><br> -->
+				    <div id ="select">Selected date: <span id="selecteddate"></span></div>
+			   </div>
+		</div>
+	</div>	
+</nav>
+
+<div class="container">
+	<div class="main">
+		<section>
+			<h2>Slide Menus</h2>
+			<!-- Class "cbp-spmenu-open" gets applied to menu -->
+			<button id="showLeft">Show/Hide Left Slide Menu</button>
+			<button id="showRight">Show/Hide Right Slide Menu</button>
+		
+		</section>
+		
+	</div>
+</div>
+
+<script src="/js/blog.js"></script>
+<script src="/js/SlidePushMenus/js/classie.js"></script>
