@@ -13,6 +13,9 @@ body{
 .about-we h2{
 	text-align:center;
 }
+.link-color{
+	color:red;
+}
 .image-stock{
 	width:100%;
 	height:400px;
@@ -60,6 +63,17 @@ body{
 	top:170px;
 	position:fixed;
 }
+.scroll-queens{
+/*	border:20px solid #cc0000;*/
+	text-align:center;
+	width:65px;
+	padding-top:5px;
+	height:50px;
+	/*border-radius:10px;*/
+	float:top;
+	top:220px;
+	position:fixed;
+}
 
 .text-color{
 	color:white;
@@ -105,20 +119,40 @@ body{
 	margin-bottom:10%;
 }
 .img-shape{
-	width:100%;
+	width:70%;
 	border-radius:50%;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
 }
 .staff-name{
 	text-align:center;
 	font-size:1.5em;
 }
+.staff-title{
+	text-align:center;
+	font-size:1em;
+}
+.shape-queens-college{
+	background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("/images/queens-college.jpg");
+	background-size:cover;
+	background-attachment:fixed;
+	color:white;
+	z-index:-1;
+	padding-top:2%;
+	padding-bottom: 5%;
+}
+#queens{
+	color:#cc0000;
+}
 
-@media all and (min-width:768px) and (max-width:1080){
+@media screen and (min-width:768px) and (max-width:1080){
 	.img-shape{
 		width:10px;
 	}
 }
-@media all and (min-width:500px) and (max-width:768px ){
+
+@media screen and (min-width:500px) and (max-width:768px ){
 	.about-we{
 		font-size:15px;
 	}
@@ -133,9 +167,12 @@ body{
 		margin-left:auto;
 		margin-right:auto;
 	}
+	.scroll{
+		display:none;
+	}
 }
 
-@media all and (max-width:500px){
+@media screen and (max-width:500px){
 	.about-we{
 		font-size:15px;
 	}
@@ -152,5 +189,8 @@ body{
 		text-align:center;	
 		margin-left:auto;
 		margin-right:auto;
+	}
+	.scroll{
+		display:none;
 	}
 }
